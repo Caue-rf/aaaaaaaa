@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css aaaaaa/cod.css">
+    <title>Engenharia Banal</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="titulo">A melhor empreiteira de CBA</h2>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Orçamentos Ativos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Descrição do Serviço</th>
+                        <th>Preço Orçado</th>
+                        <th>Status do Serviço</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabela-clientela">
+                    <tr class="clientela" id="primeiro-cliente">
+                        <td class="nome">Pedro Henrique</td>
+                        <td class="descri-servico">Instalação de Energia Solar</td>
+                        <td class="preco-orcado">45.000R$ em 8x s/juros</td>
+                        <td class="status-servico">Em andamento</td>
+                    </tr>
+                    <tr class="clientela">
+                        <td class="nome">Salua Oliveira</td>
+                        <td class="descri-servico">Cronstrução de piscina</td>
+                        <td class="preco-orcado">12.000,00R$ em 5x s/juros</td>
+                        <td class="status-servico">Finalizado</td>
+                    </tr>
+                    <tr class="clientela">
+                        <td class="nome">Henrique Carvalho</td>
+                        <td class="descri-servico">Reforma de telhado</td>
+                        <td class="preco-orcado">30.000,00R$ em 10x s/juros</td>
+                        <td class="status-servico">Em andamento</td>
+                    </tr>
+                    <tr class="clientela">
+                        <td class="nome">Ana Catarina Costa</td>
+                        <td class="descri-servico">Cronstrução de Casa Própria</td>
+                        <td class="preco-orcado">1.300.000,00R$ em 30x s/juros</td>
+                        <td class="status-servico">Finalizado</td>
+                    </tr>
+                    <tr class="clientela">
+                        <td class="nome">Paulo Lotufo</td>
+                        <td class="descri-servico">Contrução de Quadra de Basquete</td>
+                        <td class="preco-orcado">5.000,00R$ á vista</td>
+                        <td class="status-servico">Em andamento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <section class="container">
+        <h2 id="tituloform">Adicionar Clientes</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adicionar">
+            <div class="">
+                <label for="nome">Nome do Cliente</label>
+                <input type="text" name="nome" id="nome" placeholder="digite o nome do cliente" class="campo">
+            </div>
+            <div class="">
+                <label for="descri-servi">Serviço a ser Prestado</label>
+                <input type="text" name="descri-servi" id="prestado" placeholder="especifique o serviço"
+                    class="campo campo-medio">
+            </div>
+            <div class="">
+                <label for="orcado">Orçamento total</label>
+                <input type="text" name="orcado" id="orcamento" placeholder="valor e parcelamento"
+                    class="campo campo-medio">
+            </div>
+            <div class="">
+                <label for="stat">Status do Serviço</label>
+                <input type="text" name="stat" id="status" placeholder="'Em andamento'/'Finalizado'"
+                    class="campo campo-medio">
+            </div>
+            <button id="criar-cliente" class="botao botao-principal">Adicionar</button>
+        </form>
+    </section>
+
+    <script src="js aaaaaa/form.js"></script>
+
+</body>
+
+</html>
