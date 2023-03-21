@@ -1,6 +1,6 @@
 let botaoCriar = document.querySelector('#criar-cliente')
 botaoCriar.addEventListener('click', function(evento){
-    evento.prevenDefault()
+    evento.preventDefault()
     //atribui ao vetor form os valores inseridos no formulário do site
     let form = document.querySelector('#form-adicionar')
 
@@ -27,7 +27,7 @@ function montarTr(clientela){
     clientelaTR.classList.add('clientela')
 
     clientelaTR.appendChild(montarTd(clientela.nome,'nome' ))
-    clientelaTR.appendChild(montarTd(clientela.prestado,'descri-servico'))
+    clientelaTR.appendChild(montarTd(clientela.servico,'descri-servico'))
     clientelaTR.appendChild(montarTd(clientela.orcamento,'preco-orcado' ))
     clientelaTR.appendChild(montarTd(clientela.status, 'status-servico'))
 
@@ -51,5 +51,6 @@ function resgatarDados(form){
         servico: form.prestado.value,
         orcamento: form.orcamento.value,
         status: form.status.value,
-    } 
+    }
+    return clientela 
 }
