@@ -1,0 +1,3 @@
+Você conseguiu criar o documento em HTML conforme solicitado, linkou corretamente o script e fez parte das funcionalidades.
+Seu CSS foi COPIADO do documento de base, porem a execução foi correta. 
+Sua nota é 5,0
